@@ -1,5 +1,4 @@
-# try_ur5_gazebo_moveit_rviz
-# try_ur5_gazebo_moveit_rviz
+
 # UR5 ROS 2 Humble 仿真 + MoveIt2 快速上手指南
 
 > **目标**：在 **Ubuntu 22.04 + ROS 2 Humble** 环境一次性跑通 Gazebo 仿真、ros2\_control、MoveIt 2 与 RViz。全部使用官方仓库提供的 launch 文件，无需手写代码。
