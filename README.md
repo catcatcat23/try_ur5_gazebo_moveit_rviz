@@ -27,7 +27,7 @@
 
 ---
 
-## 安装 ROS2 与 Gazebo
+## 安装 ROS2 与 Gazebo(强烈建议使用鱼香ros2--- fishros，视频参考古月居21讲)
 
 ```bash
 # 1. 添加 ROS 2 APT 源
@@ -47,7 +47,7 @@ sudo apt install -y \
   ros-humble-gazebo-ros2-control \
   python3-colcon-common-extensions
 
-# 3. 初始化 rosdep（只第一次）
+# 3. 初始化 rosdep（只第一次）（鱼香提供了国内版本 rosdepc 下载视频参考古月居）
 sudo rosdep init
 rosdep update
 ```
@@ -91,7 +91,7 @@ colcon build --symlink-install --cmake-clean-cache
 source install/setup.bash
 ```
 
-> **说明**：若确实需要 MoveIt Warehouse 功能，请先安装 Mongo C/C++ 驱动后再去掉 `--skip-keys` 重新编译。
+> **说明**：若确实需要 MoveIt Warehouse 功能，请先安装 Mongo C/C++ 驱动后再去掉 `--skip-keys` 重新编译。warehouse 可以跳过 如需下载请使用git clone 源码仓库 apt下载无法找到mongocxx等库 universe库同样
 
 ---
 
